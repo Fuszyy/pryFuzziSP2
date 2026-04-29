@@ -21,5 +21,10 @@ namespace pryFuzziSP2
         {
 
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
