@@ -26,5 +26,24 @@ namespace pryFuzziSP2
         {
 
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            if(txtDistancia.Text != "" && txtDias.Text != "" && int.Parse(txtDistancia.Text) >= 0 && int.Parse(txtDias.Text) >= 0 && int.Parse(txtDias.Text) <= 31)
+            {
+                Double price = Double.Parse(txtDistancia.Text) * 5;
+                if (int.Parse(txtDias.Text) >= 7 || int.Parse(txtDias.Text) == 7)
+                {
+                    price = price * 0.5;
+                }
+                MessageBox.Show("Calculo completado. Costo total del boleto: $" + price, "Calculado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtDias.Text = String.Empty;
+                txtDistancia.Text = String.Empty;
+            }
+            else
+            {
+                MessageBox.Show("Datos ingresados inválidos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
