@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.btnAccept = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,11 +43,21 @@
             this.pbxLogo.TabIndex = 0;
             this.pbxLogo.TabStop = false;
             // 
+            // btnAccept
+            // 
+            this.btnAccept.Location = new System.Drawing.Point(409, 415);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(75, 23);
+            this.btnAccept.TabIndex = 1;
+            this.btnAccept.Text = "Aceptar";
+            this.btnAccept.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 450);
+            this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.pbxLogo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
@@ -60,6 +71,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbxLogo;
+        private System.Windows.Forms.Button btnAccept;
     }
 }
 
