@@ -29,7 +29,7 @@ namespace pryFuzziSP2
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-            if(txtDistancia.Text != "" && txtDias.Text != "" && int.Parse(txtDistancia.Text) >= 0 && int.Parse(txtDias.Text) >= 0 && int.Parse(txtDias.Text) <= 31)
+            if(txtDistancia.Text != "" && txtDias.Text != "" && int.Parse(txtDistancia.Text) >= 0 && int.Parse(txtDias.Text) >= 0 && int.Parse(txtDias.Text) <= 30)
             {
                 Double price = Double.Parse(txtDistancia.Text) * 5;
                 if (int.Parse(txtDias.Text) >= 7 || int.Parse(txtDias.Text) == 7)
@@ -44,6 +44,11 @@ namespace pryFuzziSP2
             {
                 MessageBox.Show("Datos ingresados inválidos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void txtDias_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
