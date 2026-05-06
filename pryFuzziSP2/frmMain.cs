@@ -42,7 +42,7 @@ namespace pryFuzziSP2
             }
             else
             {
-                MessageBox.Show("Datos ingresados inválidos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Datos ingresados inválidos", "Ingreso de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
